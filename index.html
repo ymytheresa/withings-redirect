@@ -1,0 +1,11 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Returning to the app…</title>
+<!-- Withings OAuth callback for a personal app: forwards ?code=…&state=… to the app's URL scheme.
+     Stores nothing; the code is useless without the app's client secret. -->
+<script>location.replace("glp1app://withings" + location.search);</script>
+<p style="font: 17px -apple-system, system-ui, sans-serif; padding: 2rem; color: #ccc; background: #000">
+  Returning to the app… <a href="#" onclick="location.replace('glp1app://withings' + location.search)" style="color:#00e0b0">Tap here</a> if nothing happens.
+</p>
